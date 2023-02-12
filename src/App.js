@@ -15,7 +15,6 @@ function App() {
     //     'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
     //   }
     // };
-    console.log({apikey: process.env.REACT_APP_API_KEY})
     async function fetchData() {
       const response = fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=London&aqi=no`)
       .then(response => response.json())
